@@ -2,10 +2,11 @@ import { Typography } from "@/components/Typography";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export default function Register() {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4">
+    <div className="flex flex-col items-center justify-center w-full gap-4 animate__animated animate__fadeIn">
       <Typography variant="h2">¡Vamos a mejorar juntos!</Typography>
 
       <div className="w-full gap-2 flex flex-row">
@@ -39,9 +40,9 @@ export default function Register() {
 
       <Typography variant="p" className="text-gray-500">
         ¿Ya tienes una cuenta?{" "}
-        <a href="/auth/login" className="text-blue-500 hover:underline">
+        <Link href="/auth/login" className="text-blue-500 hover:underline">
           Inicia Sesión
-        </a>
+        </Link>
       </Typography>
     </div>
   );

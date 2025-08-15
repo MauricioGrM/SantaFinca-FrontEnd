@@ -2,10 +2,11 @@ import { Typography } from "@/components/Typography";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export default function Login() {
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4">
+    <div className="flex flex-col items-center justify-center w-full gap-4 animate__animated animate__fadeIn">
       <Typography variant="h2">¡Qué bueno verte de nuevo!</Typography>
 
       <div className="w-full gap-2 flex flex-col">
@@ -24,9 +25,9 @@ export default function Login() {
       <div className="flex flex-col items-center">
         <Typography variant="p" className="text-gray-500">
           ¿No tienes una cuenta?{" "}
-          <a href="/auth/register" className="text-blue-500 hover:underline">
-            Regístrate
-          </a>
+          <Link href="/auth/register" className="text-blue-500 hover:underline">
+            Register
+          </Link>
         </Typography>
 
         <Typography variant="p" className="text-gray-500">
