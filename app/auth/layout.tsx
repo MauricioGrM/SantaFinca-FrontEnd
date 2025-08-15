@@ -1,4 +1,7 @@
+import { Typography } from "@/components/Typography";
+import "./auth.styles.css";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Login",
@@ -11,8 +14,20 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="p-6 bg-white rounded shadow">{children}</div>
+    <main className="h-screen w-full flex">
+      <div className="main-auth-container w-1/2 h-full flex justify-center items-center flex-col">
+        <Typography variant="h1" className="text-white">
+          Sistema de Gestión de Fincas
+        </Typography>
+        <Typography variant="p" className="text-white">
+          Santa Finca te ayuda a gestionar tu finca
+        </Typography>
+      </div>
+      <div className="w-1/2 h-full flex justify-center items-center">
+        <div className="w-1/2 p-6 flex justify-center items-center">
+          {children}
+        </div>
+      </div>
     </main>
   );
 }

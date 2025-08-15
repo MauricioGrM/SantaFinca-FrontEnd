@@ -51,10 +51,10 @@ export default function PublicNavigation() {
         {/* Desktop Actions */}
         <div className="hidden md:flex gap-2">
           <Button variant="outline" asChild>
-            <Link href="/auth/login">Register</Link>
+            <Link href="/auth/register">Register</Link>
           </Button>
           <Button asChild>
-            <Link href="/auth/register">Login</Link>
+            <Link href="/auth/login">Login</Link>
           </Button>
           <ThemeModeToggle />
         </div>

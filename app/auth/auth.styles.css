@@ -1,0 +1,16 @@
+.main-auth-container {
+  position: relative;
+  background-image: url("/login/LoginBackground.png");
+  background-size: cover;
+  background-position-y: bottom;
+  &::before {
+    content: "";
+    background-image: url(/login/Wave.svg);
+    background-size: cover;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
